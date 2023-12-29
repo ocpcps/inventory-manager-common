@@ -162,3 +162,49 @@ com.inventorymanager.common.util: contém classes utilitárias para o projeto. E
 src/test/java: contém classes de teste de unidade para garantir que as classes funcionem corretamente. Esses testes são executados automaticamente para garantir que as alterações no código não quebrem as funcionalidades existentes.
 
 Em geral, a estrutura do projeto "inventory-manager-common" é bem organizada e segue as melhores práticas de desenvolvimento de software em Java.
+
+
+==========================================================================================================================
+
+
+O projeto "inventory-manager-common" é uma biblioteca Java que fornece classes e interfaces comuns para os projetos "inventory-manager-backend" e "inventory-manager-frontend". Ele é usado para compartilhar código comum entre esses dois projetos.
+
+O projeto é dividido em vários pacotes, cada um com uma finalidade específica. Aqui está uma visão geral dos pacotes:
+
+com.inventory.common.config: contém classes de configuração para o projeto.
+com.inventory.common.constants: contém constantes usadas em todo o projeto.
+com.inventory.common.dto: contém classes de transferência de dados usadas para enviar dados entre o backend e o frontend.
+com.inventory.common.entity: contém classes de entidade que representam objetos do mundo real no banco de dados.
+com.inventory.common.exception: contém classes de exceção personalizadas usadas em todo o projeto.
+com.inventory.common.repository: contém interfaces de repositório que definem operações de banco de dados para as classes de entidade.
+com.inventory.common.service: contém interfaces de serviço que definem operações de negócios para as classes de entidade.
+com.inventory.common.util: contém classes utilitárias usadas em todo o projeto.
+O projeto usa o Spring Framework para gerenciamento de dependências e injeção de dependências. Ele também usa o Hibernate como framework ORM para mapeamento objeto-relacional.
+
+O projeto depende de várias bibliotecas, incluindo o Spring Framework, Hibernate, Jackson, Log4j, entre outras. Essas dependências são gerenciadas pelo Maven, que é usado como gerenciador de dependências.
+
+O projeto usa um banco de dados MySQL para armazenar dados. As configurações do banco de dados são definidas em um arquivo application.properties localizado no diretório src/main/resources.
+
+Em resumo, o projeto "inventory-manager-common" é uma biblioteca Java que fornece classes e interfaces comuns para os projetos "inventory-manager-backend" e "inventory-manager-frontend". Ele usa o Spring Framework e o Hibernate como frameworks principais e depende de várias bibliotecas. O banco de dados usado é o MySQL.
+
+Com base no arquivo pom.xml do projeto "inventory-manager-common", podemos analisar as dependências e bibliotecas usadas no projeto. Aqui está uma lista das principais dependências e bibliotecas:
+
+Spring Framework: é um framework para desenvolvimento de aplicações Java. O projeto usa várias dependências do Spring Framework, incluindo spring-boot-starter-web, spring-boot-starter-data-jpa, spring-boot-starter-test, entre outras. Essas dependências são usadas para gerenciamento de dependências, injeção de dependências, configuração de banco de dados, entre outras funcionalidades.
+
+Hibernate: é um framework ORM para mapeamento objeto-relacional. O projeto usa a dependência hibernate-core para integração com o Hibernate.
+
+Jackson: é uma biblioteca para serialização e desserialização de objetos Java em JSON. O projeto usa a dependência jackson-databind para integração com o Jackson.
+
+Log4j: é uma biblioteca para logging em aplicações Java. O projeto usa a dependência log4j-slf4j-impl para integração com o Log4j.
+
+MySQL Connector/J: é um driver JDBC para conexão com bancos de dados MySQL. O projeto usa a dependência mysql-connector-java para integração com o MySQL.
+
+JUnit: é um framework para testes unitários em aplicações Java. O projeto usa a dependência junit-jupiter-api para escrever testes unitários.
+
+Mockito: é uma biblioteca para criação de mocks em testes unitários. O projeto usa a dependência mockito-core para criação de mocks.
+
+AssertJ: é uma biblioteca para asserções em testes unitários. O projeto usa a dependência assertj-core para asserções em testes unitários.
+
+Lombok: é uma biblioteca para geração automática de código Java. O projeto usa a dependência lombok para geração automática de getters, setters, construtores, entre outros.
+
+Essas são as principais dependências e bibliotecas usadas no projeto "inventory-manager-common". Cada uma delas é usada para uma finalidade específica, como gerenciamento de dependências, integração com frameworks, testes unitários, entre outras funcionalidades.
